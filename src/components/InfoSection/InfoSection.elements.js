@@ -52,6 +52,8 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
+
+
   color: ${({lightText}) => (lightText ? '#f7f8fa' : '#1c2237')};
 `;
 
@@ -60,5 +62,21 @@ export const SubTitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
+
   color: ${({lightTopDesc}) => (lightTopDesc ? '#a9b3c1' : '#f7f8fa')};
+`;
+
+export const ImgWrapper = styled.div`
+  display: flex;
+
+  justify-content: ${({start}) => (start ? 'flex-start' : 'flex-end')};
+`;
+
+export const Img = styled.img`
+  padding-right: 0;
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  max-height: 500px;
 `;

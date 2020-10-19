@@ -12,8 +12,8 @@ const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.div`
   z-index: 1;
-  width: 100%auto;
-  max-width: 1300px;
+  width: 100%;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 50px;
@@ -46,7 +46,6 @@ export const Button = styled.button`
   @media screen and  (max-width: 960px) {
     width: 100%;
   }
-
 `;
 
 export default GlobalStyle;

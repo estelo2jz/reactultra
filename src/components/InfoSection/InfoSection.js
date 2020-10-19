@@ -8,7 +8,9 @@ import {
   TextWrapper,
   TopLine,
   Heading,
-  SubTitle
+  SubTitle,
+  ImgWrapper,
+  Img
 } from './InfoSection.elements';
 
 function InfoSection({
@@ -21,7 +23,10 @@ function InfoSection({
   topLine,
   headline,
   description,
-  buttonLabel
+  buttonLabel,
+  img,
+  alt,
+  start
  }) {
   return (
     <>
@@ -45,6 +50,11 @@ function InfoSection({
                   </Button>
                 </Link>
               </TextWrapper>
+            </InfoColumn>
+            <InfoColumn>
+              <ImgWrapper start={start}>
+                <img src={img} alr={alt} />
+              </ImgWrapper>
             </InfoColumn>
           </InfoRow>
         </Container>
