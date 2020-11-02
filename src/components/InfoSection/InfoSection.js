@@ -1,33 +1,33 @@
 import React from 'react';
-import { Container, Button } from '../../globalStyles';
 import { Link } from 'react-router-dom';
-import { 
+import { Container, Button } from '../../globalStyles';
+import {
   InfoSec,
-  InfoColumn,
   InfoRow,
+  InfoColumn,
   TextWrapper,
   TopLine,
   Heading,
-  SubTitle,
+  Subtitle,
   ImgWrapper,
   Img
 } from './InfoSection.elements';
 
 function InfoSection({
-  lightBg, 
-  imgStart, 
-  lightTopLine, 
-  lightText, 
-  lightTextDesc,
-  primary, 
+  primary,
+  lightBg,
   topLine,
+  lightTopLine,
+  lightText,
+  lightTextDesc,
   headline,
   description,
   buttonLabel,
   img,
   alt,
+  imgStart,
   start
- }) {
+}) {
   return (
     <>
       <InfoSec lightBg={lightBg}>
@@ -35,16 +35,10 @@ function InfoSection({
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
               <TextWrapper>
-                <TopLine lightTopLine={lightTopLine}>
-                  {topLine}
-                </TopLine>
-                <Heading lightText={lightText}>
-                  {headline}
-                </Heading>
-                <SubTitle lightTextDesc={lightTextDesc}>
-                  {description}
-                </SubTitle>
-                <Link to="/sign-up">
+                <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headline}</Heading>
+                <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                <Link to='/sign-up'>
                   <Button big fontBig primary={primary}>
                     {buttonLabel}
                   </Button>
@@ -53,14 +47,14 @@ function InfoSection({
             </InfoColumn>
             <InfoColumn>
               <ImgWrapper start={start}>
-                <img src={img} alr={alt} />
+                <Img src={img} alt={alt} />
               </ImgWrapper>
             </InfoColumn>
           </InfoRow>
         </Container>
       </InfoSec>
     </>
-  )
+  );
 }
 
 export default InfoSection;
