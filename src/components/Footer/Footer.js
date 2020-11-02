@@ -1,4 +1,10 @@
-import React from 'react'
+import React from 'react';
+import {
+  FooterContainer,
+  FooterSubHeading,
+  FooterSubscription,
+  FooterSubText
+} from './Footer.elements';
 
 const Footer = () => {
   return (
