@@ -42,7 +42,7 @@ function Navbar() {
           <NavbarContainer>
             <NavLogo to="/">
               <NavIcon />
-              ULTRA
+              E.BUILD
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

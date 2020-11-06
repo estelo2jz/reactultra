@@ -80,9 +80,9 @@ function Footer() {
         <SocialMediaWrap>
           <SocialLogo to='/'>
             <SocialIcon />
-            ULTRA
+            E.BUILD
           </SocialLogo>
-          <WebsiteRights>ULTRA © 2020</WebsiteRights>
+          <WebsiteRights>E.BUILD © 2020</WebsiteRights>
           <SocialIcons>
             <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
               <FaFacebook />
